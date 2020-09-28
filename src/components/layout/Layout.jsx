@@ -10,7 +10,9 @@ const Layout = ({ children }) => {
     <>
       <Header isOpen={isOpen} setIsOpen={setIsOpen} />
       <Sidebar isOpen={isOpen} />
-      {children}
+      <main className='main'>
+        {children}
+      </main>
       <Footer />
     </>
   )

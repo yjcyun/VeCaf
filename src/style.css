@@ -1,37 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Varela+Round&display=swap");
+
 :root {
-  --primary-clr-1:#cb7152;
+  --primary-clr-1: #cb7152;
+  --primary-clr-2: #23282f;
+  --primary-clr-3: #cb9252;
+  --secondary-clr-1: #6b6b6b;
+  --primary-ff: "Varela Round", sans-serif;
+  --secondary-ff: "Libre Baskerville", serif;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-
+  font-family: var(--primary-ff);
 }
 
 img {
   width: 100%;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
 }
-a{
-  text-decoration: none
+a {
+  text-decoration: none;
 }
 
+.main {
+  min-height: calc(100vh - 5rem);
+}
 .page-center {
   margin: 0 auto;
   max-width: 1170px;
-  width: 90vw
+  padding: 0 1rem;
 }
 
 @media screen and (min-width: 992px) {
   .page-center {
-    width: 95vw;
+    width: 95%;
+    padding: 0 2rem;
   }
 }
-
