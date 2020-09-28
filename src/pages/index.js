@@ -1,11 +1,13 @@
 import React from "react"
-import Layout from "../components/layout/Layout"
+import Hero from "../components/home/Hero"
+import Footer from "../components/layout/Footer"
 import '../style.css'
 
 export default function Home() {
   return (
-    <Layout>
-      
-    </Layout>
+    <>
+      <Hero />
+      <Footer />
+    </>
   )
 }

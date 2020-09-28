@@ -27,6 +27,9 @@ const SidebarWrapper = styled.aside`
       color: white;
     }
   }
+  @media(min-width:768px) {
+    display: none;
+  }
 `
 
 export default Sidebar

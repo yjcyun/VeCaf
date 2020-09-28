@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Varela+Round&family=Kaushan+Script&display=swap");
 
 :root {
   --primary-clr-1: #cb7152;
@@ -7,6 +7,7 @@
   --secondary-clr-1: #6b6b6b;
   --primary-ff: "Varela Round", sans-serif;
   --secondary-ff: "Libre Baskerville", serif;
+  --hero-ff: "Kaushan Script", cursive;
 }
 
 * {

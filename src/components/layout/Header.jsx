@@ -1,36 +1,41 @@
 import React from 'react'
 import styled from 'styled-components'
-import NavLinks from '../../constants/NavLinks'
-import logo from '../../images/coffee.png'
 import { CgMenuRightAlt } from 'react-icons/cg'
+import NavLinks from '../../constants/NavLinks'
 
 const Header = ({ isOpen, setIsOpen }) => {
-
   return (
-    <HeaderWrapper className='page-center'>
-      <NavHeader>
-        <div className='logo'>
-          <img src={logo} alt='Coffe mug' />
-        </div>
-        <button onClick={()=>setIsOpen(!isOpen)}>
-          <CgMenuRightAlt className='icon' />
-        </button>
-      </NavHeader>
-      <NavLinks styleClass='header-nav' />
-    </HeaderWrapper>
+    <HeaderOverlay>
+      <HeaderWrapper className='page-center'>
+        <NavHeader>
+          <div className='logo'>VeCaf</div>
+          <button onClick={() => setIsOpen(!isOpen)}>
+            <CgMenuRightAlt className='icon' />
+          </button>
+        </NavHeader>
+        <NavLinks styleClass='header-nav' />
+      </HeaderWrapper>
+    </HeaderOverlay>
+
   )
 }
+
+const HeaderOverlay = styled.div`
+  border-bottom: 1px solid white;
+  background: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.5));
+`
 
 const HeaderWrapper = styled.section`
   display: flex;
   align-items: center;
   height: 5rem;
+  font-weight: 700;
   .header-nav {
     display: none;
   }
   .logo {
-    width: 60px;
-    margin-right: 1rem;
+    font-family: var(--secondary-ff);
+    font-size: 1.7rem;
   }
   @media(min-width:768px){
     .header-nav{
