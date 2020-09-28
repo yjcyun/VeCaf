@@ -1,6 +1,6 @@
 import React from 'react'
-import styled from 'styled-components'
 import { graphql, useStaticQuery } from 'gatsby'
+import styled from 'styled-components'
 import BackgroundImage from 'gatsby-background-image'
 import Header from '../layout/Header'
 
@@ -16,7 +16,7 @@ const query = graphql`
   }
 `
 
-const Hero = () => {
+const Hero = ({ isOpen, setIsOpen }) => {
   const { bg } = useStaticQuery(query);
 
   return (
@@ -25,7 +25,7 @@ const Hero = () => {
         fluid={bg.childImageSharp.fluid}
         className='masthead'
       >
-       <Header />
+        <Header isOpen={isOpen} setIsOpen={setIsOpen} />
         <HeroText>
           <div>Coffee<br />Matters</div>
         </HeroText>
@@ -36,17 +36,20 @@ const Hero = () => {
 
 const HeroText = styled.div`
   font-family: var(--hero-ff);
-  font-size: 8rem;
+  font-size: 5rem;
   color: var(--primary-clr-2);
   background: rgba(255,255,255,0.4);
-  height: calc(100% - 4rem);
+  height: calc(100% - 5rem);
   display: flex;
   justify-content: center;
   align-items: center;
   div{
     text-align: center;
     line-height: 1;
-    transform: rotate(-10deg);
+    transform: rotate(-10deg) translateX(-1rem);
+  }
+  @media(min-width: 768px){
+    font-size: 8rem;
   }
 `
 

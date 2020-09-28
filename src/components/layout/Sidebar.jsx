@@ -13,6 +13,8 @@ const Sidebar = ({ isOpen }) => {
 const SidebarWrapper = styled.aside`
   background-color: var(--primary-clr-1);
   width: 100%;
+  position: absolute;
+  top: 5rem;
   height: auto;
   padding: 2rem 0;
   .side-nav {

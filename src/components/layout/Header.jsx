@@ -20,12 +20,12 @@ const Header = ({ isOpen, setIsOpen }) => {
   )
 }
 
-const HeaderOverlay = styled.div`
+const HeaderOverlay = styled.section`
   border-bottom: 1px solid white;
   background: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.5));
 `
 
-const HeaderWrapper = styled.section`
+const HeaderWrapper = styled.div`
   display: flex;
   align-items: center;
   height: 5rem;
