@@ -25,8 +25,7 @@ const query = graphql`
 `
 
 const SpecialMenu = () => {
-  const { brunch } = useStaticQuery(query);
-  const { happy } = useStaticQuery(query);
+  const { brunch, happy } = useStaticQuery(query);
 
   return (
     <SpecialWrapper className='card-center section-margin'>
