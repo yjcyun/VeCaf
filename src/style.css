@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Varela+Round&family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Varela+Round&family=Kaushan+Script&display=swap");
 
 :root {
   --primary-clr-1: #cb7152;
   --primary-clr-2: #23282f;
   --primary-clr-3: #cb9252;
   --secondary-clr-1: #6b6b6b;
-  --secondary-clr-2:#EDEDED;
+  --secondary-clr-2: #ededed;
   --primary-ff: "Varela Round", sans-serif;
   --secondary-ff: "Libre Baskerville", serif;
   --hero-ff: "Kaushan Script", cursive;
@@ -29,8 +29,33 @@ ul,
 li {
   list-style: none;
 }
+
 a {
   text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--secondary-ff);
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2.3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.2rem;
 }
 
 .main {
@@ -38,12 +63,15 @@ a {
 }
 .page-center {
   margin: 0 auto;
-  max-width: 1170px;
+  max-width: 1260px;
   padding: 0 1rem;
 }
-.card-center{
+.card-center {
   margin: 0 auto;
-  max-width: 1170px;
+  max-width: 1260px;
+}
+.section-margin {
+  margin: 8rem auto;
 }
 .color-orange {
   color: var(--primary-clr-1);
@@ -52,6 +80,20 @@ a {
 @media screen and (min-width: 992px) {
   .page-center {
     width: 95%;
-    padding: 0 2rem;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.7rem;
+  }
+
+  h4 {
+    font-size: 1.3rem;
   }
 }

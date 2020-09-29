@@ -29,7 +29,7 @@ const SpecialMenu = () => {
   const { happy } = useStaticQuery(query);
 
   return (
-    <SpecialWrapper className='card-center'>
+    <SpecialWrapper className='card-center section-margin'>
       <div className='left'>
         <BackgroundImage
           fluid={brunch.childImageSharp.fluid}
@@ -100,12 +100,12 @@ const SpecialWrapper = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: auto;
-  margin: 8rem auto;
   box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
+  @media(max-width: 768px){
+    grid-template-columns: 1fr;
+  }
   h2 {
     font-family: var(--secondary-ff);
-    font-size: 2rem;
-    font-weight: 400;
     margin-bottom: 1rem;
   }
   .subtitle {

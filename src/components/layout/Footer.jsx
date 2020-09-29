@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       <FooterWrapper>
-        <h2>VeCaf</h2>
+        <h1>VeCaf</h1>
         <FooterBody className='page-center'>
           <div className='body-div'>
             <h3>About</h3>
@@ -58,10 +58,8 @@ const FooterWrapper = styled.footer`
   background-color: var(--primary-clr-2);
   color: #fff;
   padding: 4rem 1rem 1rem;
-  h2 {
-    font-weight: 400;
+  h1 {
     font-family: var(--secondary-ff);
-    font-size: 2.5rem;
     color: var(--primary-clr-3);
     margin-bottom: 2rem;
   }
@@ -77,8 +75,6 @@ const FooterBody = styled.div`
   text-align: center;
   h3{
     font-family: var(--secondary-ff);
-    font-size: 1.5rem;
-    font-weight: 400;
     margin-bottom: 1rem;
   }
   .body-div {

@@ -2,6 +2,7 @@ import React from 'react'
 import { homeStory } from '../../constants/home-story'
 import chef from '../../images/chef.png'
 import styled from 'styled-components'
+import Title from '../layout/Title'
 
 const Welcome = () => {
   return (
@@ -11,7 +12,7 @@ const Welcome = () => {
           <div className='img-container'>
             <img src={chef} alt='Chef Hat' />
           </div>
-          <h1>Welcome</h1>
+          <Title title='Welcome'/>
         </div>
         <div className='welcome-section-wrapper'>
           {homeStory.map(story => (
@@ -43,36 +44,12 @@ const WelcomeContainer = styled.div`
       width: 5rem;
       margin: 0 auto 1.5rem;
     }
-    h1 {
-      font-family: var(--secondary-ff);
-      font-weight: 400;
-      font-size: 2rem;
-      margin-bottom: 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      :after, :before {
-      content:'';
-      width: 0;
-      height: 1px;
-      background: var(--secondary-clr-2);
-      margin: 0 20px;
-      }
-    }
   }
   .welcome-section-wrapper{
     display: flex;
     flex-direction: column;
   }
   @media (min-width: 768px) {
-    .welcome-sign{
-      h1{
-        font-size: 2.2rem;
-        :after, :before {
-          width: 10rem;
-        }
-      }
-    }
     .welcome-section-wrapper{
       flex-direction: row;
     }
@@ -88,15 +65,8 @@ const WelcomeSection = styled.div`
   flex: 1;
   h3 {
     font-family: var(--secondary-ff);
-    font-weight: 400;
-    font-size: 1.4rem;
     margin-bottom: 1rem;
     color: var(--primary-clr-1);
-  }
-  @media (min-width: 768px) {
-    h3{
-      font-size: 1.7rem;
-    }
   }
 `
 
