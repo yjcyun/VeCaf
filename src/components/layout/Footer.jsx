@@ -13,15 +13,7 @@ const Footer = () => {
           </div>
           <div className='body-div'>
             <h3>Get news & offers</h3>
-            <form
-              name='vecaf-subscription'
-              method='post'
-              netlify-honeypot='bot-field'
-              data-netlify='true'
-              action='/success'
-            >
-              <input type='hidden' name='bot-field' />
-              <input type='hidden' name='form-name' value='vecaf-subscription' />
+            <form>
               <input
                 type='email'
                 name='email'

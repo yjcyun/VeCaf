@@ -6,12 +6,12 @@ const NavLinks = ({ styleClass }) => {
   return (
     <NavWrapper className={styleClass}>
       <li>
-        <Link to='/menu'>
+        <Link to='/'>
           Menu
         </Link>
       </li>
       <li>
-        <Link to='/gallery'>
+        <Link to='/'>
           Gallery
         </Link>
       </li>

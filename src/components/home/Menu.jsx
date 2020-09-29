@@ -33,8 +33,8 @@ const Menu = () => {
     <>
       <Title title='Menu' />
       <MenuWrapper className='page-center section-margin mt-5'>
-        {categories.map(item => (
-          <div className=''>
+        {categories.map((item, index) => (
+          <div key={index}>
             <h3 className='color-orange'>{item}</h3>
             <ul>
               {renderMenu(item)}
@@ -48,7 +48,7 @@ const Menu = () => {
 
 const MenuWrapper = styled.section`
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(auto-fit,minmax(280px, 1fr));
   grid-gap: 3rem;
   h3 {
     text-transform: capitalize;
