@@ -11,7 +11,7 @@ const Sidebar = ({ isOpen }) => {
 }
 
 const SidebarWrapper = styled.aside`
-  background-color: var(--primary-clr-1);
+  background-color: #fff;
   width: 100%;
   position: absolute;
   top: 5rem;
@@ -26,7 +26,7 @@ const SidebarWrapper = styled.aside`
       margin: 1rem 0;
     }
     a{
-      color: white;
+      color: var(--primary-clr-1);
     }
   }
   @media(min-width:768px) {
