@@ -24,7 +24,7 @@ const Offer = () => {
   return (
     <OfferWrapper className='page-center section-margin'>
       <Title title='We Offer' />
-      <div className='each-offer'>
+      <div className='each-offer mt-5'>
         {weoffer.nodes.map((node, imgIndex) => (
           <div className='img-container' key={imgIndex}>
             <Image fluid={node.childImageSharp.fluid} />
@@ -42,7 +42,6 @@ const OfferWrapper = styled.section`
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
     grid-gap: 3rem;
-    margin-top: 5rem;
     justify-content: center;
     text-align: center;
   }

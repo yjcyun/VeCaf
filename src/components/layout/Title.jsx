@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Title = ({title}) => {
+const Title = ({title,dark}) => {
   return (
-    <TitleWrapper>{title}</TitleWrapper>
+    <TitleWrapper dark={dark}>{title}</TitleWrapper>
   )
 }
 
@@ -13,6 +13,7 @@ const TitleWrapper = styled.h1`
   display: flex;
   align-items: center;
   justify-content: center;
+  color: ${props=>props.dark?'#fff': '000'};
   :after, :before {
     content:'';
     width: 0;

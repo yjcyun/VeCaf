@@ -1,8 +1,8 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
-import styled from 'styled-components'
 import BackgroundImage from 'gatsby-background-image'
 import Header from '../layout/Header'
+import styled from 'styled-components'
 
 const query = graphql`
   {

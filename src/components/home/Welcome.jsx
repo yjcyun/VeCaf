@@ -7,7 +7,7 @@ import Title from '../layout/Title'
 const Welcome = () => {
   return (
     <WelcomeWrapper className='page-center'>
-      <WelcomeContainer>
+      <WelcomeContainer className='mt-1'>
         <div className='welcome-sign'>
           <div className='img-container'>
             <img src={chef} alt='Chef Hat' />
@@ -37,7 +37,6 @@ const WelcomeContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
   .welcome-sign {
     margin: 0 0 2rem;
     .img-container {
