@@ -1,4 +1,5 @@
 import React from "react"
+import SpecialMenu from "../components/home/SpecialMenu"
 import Welcome from "../components/home/Welcome"
 import Layout from "../components/layout/Layout"
 import '../style.css'
@@ -8,6 +9,7 @@ export default function Home() {
     <>
       <Layout home>
         <Welcome />
+        <SpecialMenu />
       </Layout>
     </>
   )

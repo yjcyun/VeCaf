@@ -1,17 +1,11 @@
 import React from 'react'
-import styled from 'styled-components'
 import { homeStory } from '../../constants/home-story'
 import chef from '../../images/chef.png'
+import styled from 'styled-components'
 
 const Welcome = () => {
   return (
     <WelcomeWrapper className='page-center'>
-      <Tabs>
-        <li>The Story</li>
-        <li>The Team</li>
-        <li>Press & Awards</li>
-      </Tabs>
-
       <WelcomeContainer>
         <div className='welcome-sign'>
           <div className='img-container'>
@@ -19,7 +13,6 @@ const Welcome = () => {
           </div>
           <h1>Welcome</h1>
         </div>
-
         <div className='welcome-section-wrapper'>
           {homeStory.map(story => (
             <WelcomeSection key={story.year}>
@@ -33,29 +26,17 @@ const Welcome = () => {
   )
 }
 
-const Tabs = styled.ul`
+const WelcomeWrapper = styled.section`
   display: flex;
-  font-family: var(--secondary-ff);
-  flex-wrap: wrap;
-  justify-content: center;
-  line-height: 2;
-  margin: 3rem 0;
-  li{
-    font-size: 1.3rem;
-    font-weight: 400;
-    margin: 0 1rem;
-  }
-  @media (min-width: 768px) {
-    ul{
-      font-size: 1.5rem
-    }
-  }
+  flex-direction: column;
+  align-items: center;
 `
 
 const WelcomeContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 2rem;
   .welcome-sign {
     margin: 0 0 2rem;
     .img-container {
@@ -117,12 +98,6 @@ const WelcomeSection = styled.div`
       font-size: 1.7rem;
     }
   }
-`
-
-const WelcomeWrapper = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 `
 
 export default Welcome

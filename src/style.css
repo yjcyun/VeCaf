@@ -41,6 +41,13 @@ a {
   max-width: 1170px;
   padding: 0 1rem;
 }
+.card-center{
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.color-orange {
+  color: var(--primary-clr-1);
+}
 
 @media screen and (min-width: 992px) {
   .page-center {
