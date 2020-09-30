@@ -39,7 +39,7 @@ const HeroText = styled.div`
   font-size: 5rem;
   color: var(--primary-clr-2);
   background: rgba(255,255,255,0.4);
-  height: calc(100% - 5rem);
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
