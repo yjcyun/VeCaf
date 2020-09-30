@@ -39,7 +39,7 @@ const HeroText = styled.div`
   font-size: 5rem;
   color: var(--primary-clr-2);
   background: rgba(255,255,255,0.4);
-  height: 100vh;
+  height: calc(100% - 5rem);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,7 +56,7 @@ const HeroText = styled.div`
 const BgImg = styled.div`
   .masthead{
     width: 100%; 
-    height: 85vh;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
